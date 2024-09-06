@@ -1,0 +1,201 @@
+Model: "model_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_BiLSTM (InputLayer)   [(None, 14, 9)]           0         
+                                                                 
+ bilstm1 (Bidirectional)     (None, 14, 64)            10752     
+                                                                 
+ bilstm2 (Bidirectional)     (None, 14, 64)            24832     
+                                                                                                                                  
+ TimeDisDenseLSTM (TimeDistr  (None, 14, 16)           1040      
+ ibuted)                                                         
+                                                                 
+ dense_20 (Dense)            (None, 14, 6)             102       
+                                                                 
+=================================================================
+Total params: 61,558
+Trainable params: 61,558
+Non-trainable params: 0
+_________________________________________________________________
+model                                             : Test   | Val
+================== mae ==================
+dhaka                                             : 0.1218 | 0.1205
+tangail                                           : 0.0826 | 0.0829
+mymensingh                                        : 0.0712 | 0.0671
+faridpur                                          : 0.0630 | 0.0613
+madaripur                                         : 0.0663 | 0.0654
+srimangal                                         : 0.0640 | 0.0642
+sylhet                                            : 0.0661 | 0.0675
+bogra                                             : 0.0543 | 0.0565
+dinajpur                                          : 0.0561 | 0.0524
+ishurdi                                           : 0.0513 | 0.0506
+rajshahi                                          : 0.0485 | 0.0460
+rangpur                                           : 0.0511 | 0.0516
+sydpur                                            : 0.0631 | 0.0597
+chuadanga                                         : 0.0489 | 0.0499
+jessore                                           : 0.0588 | 0.0607
+khulna                                            : 0.0446 | 0.0420
+mongla                                            : 0.0466 | 0.0437
+satkhira                                          : 0.0394 | 0.0399
+barisal                                           : 0.0491 | 0.0487
+bhola                                             : 0.0562 | 0.0494
+khepupara                                         : 0.0461 | 0.0455
+patuakhali                                        : 0.0430 | 0.0416
+chandpur                                          : 0.0543 | 0.0516
+teknaf                                            : 0.0509 | 0.0466
+chittagong                                        : 0.0524 | 0.0497
+comilla                                           : 0.0477 | 0.0394
+coxsbazar                                         : 0.0408 | 0.0418
+feni                                              : 0.0485 | 0.0426
+hatiya                                            : 0.0410 | 0.0399
+kutubdia                                          : 3.9634 | 0.0394
+mcourt                                            : 0.0546 | 0.0534
+rangamati                                         : 0.0431 | 0.0426
+sandwip                                           : 0.0334 | 0.0328
+ambaganctg                                        : 0.0546 | 0.0559
+sitakunda                                         : 0.0443 | 0.0454
+================== msle ==================
+dhaka                                             : 0.0074 | 0.0073
+tangail                                           : 0.0054 | 0.0054
+mymensingh                                        : 0.0049 | 0.0046
+faridpur                                          : 0.0046 | 0.0042
+madaripur                                         : 0.0048 | 0.0041
+srimangal                                         : 0.0056 | 0.0052
+sylhet                                            : 0.0053 | 0.0051
+bogra                                             : 0.0043 | 0.0046
+dinajpur                                          : 0.0048 | 0.0040
+ishurdi                                           : 0.0041 | 0.0038
+rajshahi                                          : 0.0039 | 0.0037
+rangpur                                           : 0.0037 | 0.0040
+sydpur                                            : 0.0055 | 0.0048
+chuadanga                                         : 0.0032 | 0.0041
+jessore                                           : 0.0042 | 0.0046
+khulna                                            : 0.0039 | 0.0034
+mongla                                            : 0.0041 | 0.0038
+satkhira                                          : 0.0032 | 0.0031
+barisal                                           : 0.0041 | 0.0039
+bhola                                             : 0.0056 | 0.0047
+khepupara                                         : 0.0038 | 0.0036
+patuakhali                                        : 0.0037 | 0.0035
+chandpur                                          : 0.0044 | 0.0041
+teknaf                                            : 0.0045 | 0.0038
+chittagong                                        : 0.0039 | 0.0038
+comilla                                           : 0.0045 | 0.0034
+coxsbazar                                         : 0.0031 | 0.0032
+feni                                              : 0.0046 | 0.0038
+hatiya                                            : 0.0033 | 0.0032
+kutubdia                                          : 0.0365 | 0.0031
+mcourt                                            : 0.0051 | 0.0048
+rangamati                                         : 0.0041 | 0.0045
+sandwip                                           : 0.0029 | 0.0027
+ambaganctg                                        : 0.0054 | 0.0050
+sitakunda                                         : 0.0040 | 0.0042
+================== mse ==================
+dhaka                                             : 0.0472 | 0.0497
+tangail                                           : 0.0344 | 0.0348
+mymensingh                                        : 0.0312 | 0.0287
+faridpur                                          : 0.0293 | 0.0265
+madaripur                                         : 0.0293 | 0.0244
+srimangal                                         : 0.0360 | 0.0353
+sylhet                                            : 0.0414 | 0.0431
+bogra                                             : 0.0293 | 0.0337
+dinajpur                                          : 0.0362 | 0.0311
+ishurdi                                           : 0.0270 | 0.0259
+rajshahi                                          : 0.0270 | 0.0247
+rangpur                                           : 0.0276 | 0.0285
+sydpur                                            : 0.0446 | 0.0375
+chuadanga                                         : 0.0455 | 0.0319
+jessore                                           : 0.0358 | 0.0392
+khulna                                            : 0.0296 | 0.0234
+mongla                                            : 0.0302 | 0.0281
+satkhira                                          : 0.0215 | 0.0215
+barisal                                           : 0.0293 | 0.0274
+bhola                                             : 0.0410 | 0.0323
+khepupara                                         : 0.0296 | 0.0282
+patuakhali                                        : 0.0239 | 0.0223
+chandpur                                          : 0.0343 | 0.0285
+teknaf                                            : 0.0328 | 0.0274
+chittagong                                        : 0.0340 | 0.0301
+comilla                                           : 0.0348 | 0.0239
+coxsbazar                                         : 0.0251 | 0.0248
+feni                                              : 0.0341 | 0.0241
+hatiya                                            : 0.0231 | 0.0206
+kutubdia                                          : 138660.3125 | 0.0243
+mcourt                                            : 0.0368 | 0.0362
+rangamati                                         : 0.0293 | 0.0261
+sandwip                                           : 0.0206 | 0.0200
+ambaganctg                                        : 0.0415 | 0.0419
+sitakunda                                         : 0.0281 | 0.0276
+================== smape ==================
+dhaka                                             : 0.2099 | 0.2023
+tangail                                           : 0.1470 | 0.1374
+mymensingh                                        : 0.1316 | 0.1261
+faridpur                                          : 0.1109 | 0.1052
+madaripur                                         : 0.1263 | 0.1249
+srimangal                                         : 0.1094 | 0.1063
+sylhet                                            : 0.1099 | 0.1098
+bogra                                             : 0.0921 | 0.0917
+dinajpur                                          : 0.0944 | 0.0876
+ishurdi                                           : 0.0962 | 0.0901
+rajshahi                                          : 0.0845 | 0.0829
+rangpur                                           : 0.0908 | 0.0891
+sydpur                                            : 0.0957 | 0.0921
+chuadanga                                         : 0.0702 | 0.0800
+jessore                                           : 0.0987 | 0.0967
+khulna                                            : 0.0774 | 0.0732
+mongla                                            : 0.0766 | 0.0730
+satkhira                                          : 0.0753 | 0.0741
+barisal                                           : 0.0845 | 0.0815
+bhola                                             : 0.0840 | 0.0786
+khepupara                                         : 0.0775 | 0.0741
+patuakhali                                        : 0.0734 | 0.0701
+chandpur                                          : 0.0830 | 0.0803
+teknaf                                            : 0.0815 | 0.0793
+chittagong                                        : 0.0797 | 0.0774
+comilla                                           : 0.0763 | 0.0662
+coxsbazar                                         : 0.0689 | 0.0685
+feni                                              : 0.0775 | 0.0710
+hatiya                                            : 0.0730 | 0.0704
+kutubdia                                          : 0.0747 | 0.0647
+mcourt                                            : 0.0799 | 0.0771
+rangamati                                         : 0.0774 | 0.0707
+sandwip                                           : 0.0586 | 0.0567
+ambaganctg                                        : 0.0777 | 0.0756
+sitakunda                                         : 0.0766 | 0.0749
+================== r^2 ==================
+dhaka                                             : 0.9404 | 0.9435
+tangail                                           : 0.9514 | 0.9572
+mymensingh                                        : 0.9548 | 0.9565
+faridpur                                          : 0.9575 | 0.9633
+madaripur                                         : 0.9552 | 0.9586
+srimangal                                         : 0.9534 | 0.9569
+sylhet                                            : 0.9521 | 0.9525
+bogra                                             : 0.9581 | 0.9586
+dinajpur                                          : 0.9533 | 0.9560
+ishurdi                                           : 0.9596 | 0.9642
+rajshahi                                          : 0.9602 | 0.9636
+rangpur                                           : 0.9586 | 0.9592
+sydpur                                            : 0.9520 | 0.9562
+chuadanga                                         : 0.9663 | 0.9617
+jessore                                           : 0.9582 | 0.9595
+khulna                                            : 0.9623 | 0.9682
+mongla                                            : 0.9620 | 0.9649
+satkhira                                          : 0.9622 | 0.9658
+barisal                                           : 0.9632 | 0.9649
+bhola                                             : 0.9592 | 0.9632
+khepupara                                         : 0.9651 | 0.9688
+patuakhali                                        : 0.9676 | 0.9704
+chandpur                                          : 0.9623 | 0.9645
+teknaf                                            : 0.9630 | 0.9672
+chittagong                                        : 0.9650 | 0.9665
+comilla                                           : 0.9581 | 0.9640
+coxsbazar                                         : 0.9688 | 0.9693
+feni                                              : 0.9608 | 0.9667
+hatiya                                            : 0.9677 | 0.9711
+kutubdia                                          : -113108.5703 | 0.9683
+mcourt                                            : 0.9622 | 0.9652
+rangamati                                         : 0.9614 | 0.9650
+sandwip                                           : 0.9693 | 0.9707
+ambaganctg                                        : 0.9597 | 0.9544
+sitakunda                                         : 0.9631 | 0.9652
